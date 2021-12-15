@@ -1,4 +1,4 @@
-import { DataVehicle } from "../../constans/vehicle.types";
+import { DataVehicle } from "../../constant/vehicle.types";
 import { ActionType } from "../action-types";
 
 interface SearchVehicleAction {

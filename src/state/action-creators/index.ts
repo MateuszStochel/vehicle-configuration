@@ -11,6 +11,7 @@ export const searchVehicle = (value: string) => {
     });
     try {
       const vehicleConfiguration = await axios.get(
+        //linki wrzucone na sztywno(powinny byc w zmiennych srodowiskowych)
         `https://vehicle-configuration.herokuapp.com/configuration/${value}`
       );
       const vahicleData = await axios.get(

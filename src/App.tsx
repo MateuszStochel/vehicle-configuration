@@ -2,7 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 
 import HiddenVehicleInformation from "./HiddenVehicleInformation";
 import { useTypedSelector } from "./hooks/useTypedSelector";
-import { DisplayError } from "./constans/vehicle.types";
+import { DisplayError } from "./constant/vehicle.types";
 import VehicleInformation from "./VehicleInformation";
 import { useActions } from "./hooks/useActions";
 
