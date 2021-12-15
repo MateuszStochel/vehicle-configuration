@@ -58,8 +58,6 @@ const App = () => {
   }
 
   const ErrorMessage = displayErrorMessage({
-    exactColorData,
-    exactEngineData,
     dataVehicle,
     isError,
   });
