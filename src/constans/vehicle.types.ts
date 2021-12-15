@@ -44,8 +44,6 @@ export interface VehicleInformationProps {
 }
 
 export interface DisplayError {
-  exactColorData: Color;
-  exactEngineData: Engine;
-  dataVehicle: DataVehicle;
+  dataVehicle: DataVehicle | null;
   isError: boolean;
 }

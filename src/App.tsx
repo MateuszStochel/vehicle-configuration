@@ -2,6 +2,7 @@ import { useCallback, useEffect, useMemo, useState } from "react";
 
 import HiddenVehicleInformation from "./HiddenVehicleInformation";
 import { useTypedSelector } from "./hooks/useTypedSelector";
+import { DisplayError } from "./constans/vehicle.types";
 import VehicleInformation from "./VehicleInformation";
 import { useActions } from "./hooks/useActions";
 
@@ -13,13 +14,8 @@ import {
 } from "./styled-components/vehicleInformation";
 import Spinner from "./styled-components/spinner";
 
-const displayErrorMessage = ({
-  exactColorData,
-  exactEngineData,
-  dataVehicle,
-  isError,
-}: any) => {
-  if (!exactColorData || !exactEngineData || !dataVehicle || isError) {
+const displayErrorMessage = ({ dataVehicle, isError }: DisplayError) => {
+  if (!dataVehicle || isError) {
     return (
       <ErrorMessage>We coudn't fetch data! Please type a number!</ErrorMessage>
     );
